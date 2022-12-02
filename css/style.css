@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+:root{
+	--f7-theme-color:#7D90DC;
+	--f7-navbar-bg-color: #fff; /*navbar*/
+	--f7-navbar-text-color:#7C899F;
+	--f7-bars-bg-color:#7D75FF;/*toolbar*/
+	--f7-tabbar-link-inactive-color: #fff; /*link toolbar*/
+	--f7-block-margin-vertical:20px;
+	--f7-card-footer-border-color: transparent; 
+	--color-verde:#4BB889;
+	--color-gris:#7C899F;
+	--color-gris-claro:#E6E8EA;
+	
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #2d2d2d;
+}
+.img-fluid{
+	max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 2px 0;
+	color: var(--f7-theme-color);
+}
+.block-title-medium{
+	font-weight: 700;
+}
+
+
+.nannies{
+
+}
+
+.nannies h1{
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.row-titles a{
+	color: #2d2d2d;
+	text-decoration: underline;
+	margin-top: 30px;
+}
+
+.capa-relative{
+	position: relative;
+	overflow: hidden;
+}
+.capa-texto{
+	position: absolute;
+	padding: 10px;
+	color: #fff;
+	bottom: 0;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.55);
+	width: 100%;
+	height: 100%;
+}
+.capa-texto h5{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.card{
+	margin-bottom: 20px;
+	border-radius: 25px;
+	box-shadow: 5px 6px 6px 1px rgba(0, 0, 0, .05);
+}
+
+.card-title{
+	font-size: 20px;
+}
+
+.card-content{
+	font-size: 12px;
+	color: #7D7D7D;
+}
+
+.card-number{
+	font-weight: 700;
+}
+
+.card-row{
+	margin-top: 8px;
+}
+
+.card i{
+	color: var(--f7-theme-color);
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.info-user{
+	background-color: var(--f7-theme-color);
+	padding: 60px 20px 10px;
+	color: #fff;
+	font-size: 12px;
+}
+.info-user img{
+	border-radius: 100%;
+}
+
+.list-panel{
+	font-size: 13px;
+}
+.list-panel .item-title{
+	font-weight: 400;
+}
+.list-panel i{
+	color: var(--f7-theme-color);
+	font-size: 20px;
+}
+
+.overflow-hidden{
+	overflow: hidden;
+}
+
+.nanny-img-maria{
+	background-image: url("../img/maria.png");
+	padding: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay-nanny{
+	background: linear-gradient(90deg, rgba(226,147,198,0.4) 0%, rgba(125,117,255,0.1) 100%);
+	position: relative;
+}
+
+
+
+
+
+
