@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
 	--f7-theme-color:#7D90DC;
 	--f7-navbar-bg-color: #fff; /*navbar*/
@@ -18,9 +18,11 @@ body{
 	font-size: 14px;
 	color: #2d2d2d;
 }
+
 .img-fluid{
 	max-width: 100%;
 }
+
 h1,h2,h3,h4,h5,h6,p{
 	margin: 2px 0;
 	color: var(--f7-theme-color);
@@ -49,6 +51,7 @@ h1,h2,h3,h4,h5,h6,p{
 	position: relative;
 	overflow: hidden;
 }
+
 .capa-texto{
 	position: absolute;
 	padding: 10px;
@@ -62,6 +65,7 @@ h1,h2,h3,h4,h5,h6,p{
 	width: 100%;
 	height: 100%;
 }
+
 .capa-texto h5{
 	font-size: 20px;
 	font-weight: 600;
@@ -77,6 +81,24 @@ h1,h2,h3,h4,h5,h6,p{
 	font-size: 20px;
 }
 
+.card-title-reviews{
+	padding-top: 5px;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.card-reviews{
+	padding: 5px;
+}
+
+.card-reviews p{
+	padding-bottom: 10px;
+}
+
+.card-reviews i{
+	padding-bottom: 10px;
+}
+
 .card-content{
 	font-size: 12px;
 	color: #7D7D7D;
@@ -84,6 +106,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .card-number{
 	font-weight: 700;
+	color: var(--f7-theme-color);
 }
 
 .card-row{
@@ -99,9 +122,18 @@ h1,h2,h3,h4,h5,h6,p{
 .info-user{
 	background-color: var(--f7-theme-color);
 	padding: 60px 20px 10px;
-	color: #fff;
+	color: #fff !important;
 	font-size: 12px;
 }
+
+.info-user h5,p{
+	color: #fff;
+}
+
+.info-user h5{
+	font-size: 14px;
+}
+
 .info-user img{
 	border-radius: 100%;
 }
@@ -121,18 +153,79 @@ h1,h2,h3,h4,h5,h6,p{
 	overflow: hidden;
 }
 
-.nanny-img-maria{
-	background-image: url("../img/maria.png");
-	padding: 100px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .overlay-nanny{
 	background: linear-gradient(90deg, rgba(226,147,198,0.4) 0%, rgba(125,117,255,0.1) 100%);
-	position: relative;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
+.capa-relative{
+	position: relative;
+	overflow: hidden;
+}
+
+.capa-button{
+	position: absolute;
+	padding: 10px;
+	color: #fff;
+	bottom: 0;
+}
+
+.nannies .button{
+	background-color: #fff;
+	color: var(--f7-theme-color);
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 15px;
+	text-transform: capitalize;
+	border-radius: 20px;
+	margin-left: 15px;
+}
+
+.nanny-info h1{
+	font-weight: 900;
+	color: var(--f7-theme-color);
+}
+
+.nanny-info h3{
+	font-size: 18px;
+	color: #7D7D7D;
+	font-weight: 500;
+}
+
+.nanny-info h2{
+	font-size: 24px;
+	color: var(--f7-theme-color);
+	font-weight: 700;
+}
+
+.nanny-info p{
+	font-size: 14px;
+	color: #7D7D7D;
+}
+
+.nanny-info strong{
+	color: var(--f7-theme-color);
+}
+
+.theme-color{
+	color: var(--f7-theme-color);
+}
+
+.black-color{
+	color: #000;
+}
+
+.page-content{
+	background-color: #F9F9F9;
+	padding-bottom: 50px;
+}
+
+.list{
+	background-color: #F9F9F9;
+}
 
 
 

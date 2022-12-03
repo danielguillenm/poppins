@@ -24,9 +24,9 @@ var app = new Framework7({
     	name: 'maria',
   		},
 		{
-		path: '/products/',
-    	url: 'products.html',
-    	name: 'products',
+		path: '/gabby/',
+    	url: 'gabbymora.html',
+    	name: 'gabby',
   		},
 	],
 	dialog: {
