@@ -32,8 +32,6 @@
 				
 			</div>
 			
-
-			
             <div class="list media-list list-panel">
                 <ul>
                     <li>
@@ -47,7 +45,7 @@
                         </a>
                     </li>
 					<li>
-                        <a href="#" class="item-content item-link panel-close">
+                        <a href="/citas/" class="item-content item-link panel-close">
                             <div class="item-media">
                                 <i class="material-icons">calendar_month</i>
                             </div>								
@@ -57,12 +55,22 @@
                         </a>
                     </li>
 					<li>
-                        <a href="#" class="item-content item-link panel-close">
+                        <a href="/profile/" class="item-content item-link panel-close">
                             <div class="item-media">
                                 <i class="material-icons">account_circle</i>
                             </div>								
                             <div class="item-inner">
                                 <span class="item-title">Mi cuenta</span>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="/nosotros/" class="item-content item-link panel-close">
+                            <div class="item-media">
+                                <i class="material-icons">info</i>
+                            </div>								
+                            <div class="item-inner">
+                                <span class="item-title">Nosotros</span>
                             </div>
                         </a>
                     </li>
@@ -73,8 +81,6 @@
 			
 		</section>
 		
-		
-
 		<section data-name="home" class="page">
 
           <!-- Top Navbar -->
@@ -88,6 +94,20 @@
 				<div class="right">
 					<a href="#" class="link panel-open" data-panel=".panel-left"><span class="material-icons">menu</span></a>
 				</div>
+				
+				<div class="subnavbar">
+				<!-- Searchbar with auto init -->
+				<form class="searchbar searchbar-init" data-search-container=".list" data-search-in=".card-content">
+				  <div class="searchbar-inner">
+					<div class="searchbar-input-wrap">
+					  <input type="search" placeholder="Search">
+					  <i class="searchbar-icon"></i>
+					  <span class="input-clear-button"></span>
+					</div>
+					<span class="searchbar-disable-button if-not-aurora">Cancel</span>
+				  </div>
+				</form>
+			</div>
 			</div>
 			</nav>
 
@@ -169,7 +189,7 @@
 								</article>
 								<article class="col-60">
 									<h4 class="card-title">Xiomara Flores</h4>
-									<p class="card-content">“Me encanta trabajar con niños en mis tiempos libres. Puedo dar tutorías en matemáticas y ciencias.<br>¡Trabajemos juntos!”</p>
+									<p class="card-content">“Creo firmemente que una de las mejores cosas es el ejercicio. Si a tus hijos les gusta ser activos, yo soy la Nanny para ellos.”</p>
 									<div class="row card-row">
 										<article class="col-30">
 										<p class="card-number">21 años</p>
@@ -197,7 +217,7 @@
 								</article>
 								<article class="col-60">
 									<h4 class="card-title">Camila Paz</h4>
-									<p class="card-content">““Soy estudiante de psicología y creo en enseñarle a los niños como controlar sus emociones.<br>Tus hijos estarán en buenas manos.”</p>
+									<p class="card-content">““Soy estudiante de psicología y creo en enseñarle a los niños como controlar sus emociones.<br>Tus hijos están en buenas manos.”</p>
 									<div class="row card-row">
 										<article class="col-30">
 										<p class="card-number">22 años</p>
@@ -231,11 +251,11 @@
 				<a href="/home/" class="link">
 					<i class="material-icons">home</i>
 				</a>
-				<a href="#" class="link">
+				<a href="/citas/" class="link">
 					<i class="material-icons">calendar_month</i>
 				</a>
 
-				<a href="#" class="link">
+				<a href="/profile/" class="link">
 					<i class="material-icons">account_circle</i>
 				</a>
 			  </div>
@@ -244,6 +264,125 @@
 			</section>
     </div>
 		
+	<section class="login-screen modal-in" id="login">
+	  <!-- Default view-page layout -->
+	  <div class="view">
+		<div class="page login-screen-page">
+		  <!-- page-content has additional login-screen content -->
+		  <div class="page-content login-screen-content">
+			<div class="login-screen-title"><img src="img/logo-poppins.png" class="img-75" alt=""></div>
+			  <div class="block text-align-center">
+			  <h6 class="block-title">¡Hola!</h6>
+			  <h1 class="block-title-medium">Bienvenido/a</h1>
+				 </div>
+			<!-- Login form -->
+			<form id="form-login">
+			  <div class="list">
+				<ul>
+				  <li class="item-content item-input gradient">
+					<div class="item-inner">
+					  <div class="item-title item-label"><i class="material-icons">mail_outline</i> Correo electrónico</div>
+					  <div class="item-input-wrap">
+						<input type="email" name="username" placeholder="Email" required validate>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				  <li class="item-content item-input gradient">
+					<div class="item-inner">
+					  <div class="item-title item-label"><i class="material-icons">lock_outline</i> Contraseña</div>
+					  <div class="item-input-wrap">
+						<input type="password" name="password" placeholder="Contraseña" required validate>
+						<span class="input-clear-button"></span>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+				
+			  <div class="list block text-align-center">
+				  
+				<ul>
+				  <li class="gradient">
+						<a href="#" class="button button-fill button-big" id="btnLogin">Iniciar sesión</a> <br>
+					  	<hr>
+					 	<p class="small">¿Aún no tienes una cuenta?</p> <a href="#" class="link button button-fill button-big popup-open" id="btnSignup" data-popup="#popup-signup">Regístrate</a>
+					  <br>
+					  <p class="small text-align-center"><a href="#" class="link login-screen-close">Cerrar inicio de sesión</a></p>
+				  </li>
+				</ul>
+
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	
+	
+	<section class="popup" id="popup-signup">
+	
+	
+		<div class="block">
+			
+			<h2 class="block-title-medium">Crea tu cuenta</h2>
+			
+			<div class="list">
+			  <ul>
+				<li class="item-content item-input">
+				  <div class="item-media"><i class="material-icons">person</i></div>
+				  <div class="item-inner">
+					<div class="item-title item-label">Nombre y apellido</div>
+					<div class="item-input-wrap">
+					  <input type="text" name="name" required validate>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-media"><i class="material-icons">mail</i></div>
+				  <div class="item-inner">
+					<div class="item-title item-label">Correo electrónico</div>
+					<div class="item-input-wrap">
+					  <input type="email" name="email" required validate>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-media"><i class="material-icons">lock</i></div>
+				  <div class="item-inner">
+					<div class="item-title item-label">Contraseña</div>
+					<div class="item-input-wrap">
+					  <input type="password" name="password" required validate>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+				<li class="item-content item-input">
+				  <div class="item-media"><i class="material-icons">lock</i></div>
+				  <div class="item-inner">
+					<div class="item-title item-label">Confirma tu contraseña</div>
+					<div class="item-input-wrap">
+					  <input type="password" name="passwordconf" required validate>
+					  <span class="input-clear-button"></span>
+					</div>
+				  </div>
+				</li>
+			  </ul>
+			</div>
+			
+			<div class="block text-align-center">
+				<button type="button" class="button button-fill button-big">Registrarse</button>
+				<p><a href="#" class="popup-close">Regresar al inicio de sesión</a></p>
+			</div>
+			
+			
+		</div>
+		
+	
+	</section>
 </div>
 	
 	

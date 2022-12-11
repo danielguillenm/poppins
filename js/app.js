@@ -28,6 +28,31 @@ var app = new Framework7({
     	url: 'gabbymora.html',
     	name: 'gabby',
   		},
+		{
+		path: '/confirmacion/',
+    	url: 'confirmacion.html',
+    	name: 'confirmacion',
+		},
+		{
+		path: '/profile/',
+    	url: 'profile.html',
+    	name: 'profile',
+  		},
+		{
+		path: '/nosotros/',
+    	url: 'nosotros.html',
+    	name: 'nosotros',
+  		},
+		{
+		path: '/info-maria/',
+    	url: 'info-maria.html',
+    	name: 'info-maria',
+  		},
+		{
+		path: '/citas/',
+    	url: 'citas.html',
+    	name: 'citas',
+  		},
 	],
 	dialog: {
 		title: 'AppBase',
@@ -65,16 +90,16 @@ $$('#btnLogin').on('click', function (e) {
 
 
 
-$$(document).on('click', '#btnAddCart', function (e) {
+$$(document).on('click', '#btnCheckout', function (e) {
 	e.preventDefault();
 
 	
 	var notification = app.notification.create({
       icon: '<i class="material-icons">check</i>',
-      title: 'Order',
+      title: 'Solicitud respondida',
       titleRightText: '',
       subtitle: '',
-      text: "Your order has been received.",
+      text: "Su cita ha sido confirmada por María.",
       closeTimeout: 3000,
     });
     notification.open();
